@@ -1,0 +1,77 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.header .photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
+}
+
+.header .title {
+    text-align: center;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.information p {
+   margin: .5rem;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+
+
+}
+
+.information a {
+    color: white;
+    text-decoration: none;
+}
+
+.information a:hover {
+    color: white;
+    text-decoration: underline;
+    
+}
+
+
+.information .fa-user, .fa-location-dot,
+.fa-whatsapp, .fa-envelope  {
+    margin-right: 5px;
+}
+
+
+
+@media only screen and (min-width: 768px)  {
+
+    .header {
+        display: grid;
+        grid-template-areas: 
+        "photo title"
+        "photo information"
+        ;
+    }
+
+    .header .photo {
+        grid-area: photo;
+        margin: 0 auto;
+    }
+
+    .header .title {
+        grid-area: title;
+        text-align: start;
+        max-width: 210px;
+    }
+
+    .header .information {
+        grid-area: information;
+    }
+    
+}

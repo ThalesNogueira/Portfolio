@@ -1,0 +1,64 @@
+
+
+.skills {
+    display: flex;
+    flex-direction: column;
+}
+
+.skills .tools ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.skills .tools ul li  {
+    max-width: 50px;
+    margin: 0.5rem;
+    
+
+}
+
+.fa-js, .fa-css3-alt, .fa-github, .fa-html5, .fa-node, .fa-react, .fa-git  {
+    font-size: 3rem;   
+     
+}
+
+.skills .softskills ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.skills .softskills ul li {
+    margin-left: 3rem;
+    padding: .5rem;
+}
+
+@media only screen and (min-width: 768px)  {
+
+    .skills {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+    }
+
+    .fa-js, .fa-css3, .fa-square-github, .fa-html5  {
+        font-size: 3rem; 
+        padding: .5rem;  
+        
+        
+        
+        
+         
+    }
+
+
+}
