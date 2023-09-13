@@ -37,18 +37,7 @@
     cursor: pointer;
 }
 
-.acordeon .trigger::after {
-    content: '';
-    display: inline-block;
-    width: 1.5rem;
-    height: 1.5rem;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-image: url('/src/imagens/arrow.svg');
-    transition: .25s;
-    
-    
-}
+
 
 .acordeon .content {
     overflow: hidden;
@@ -65,4 +54,22 @@
     opacity: 1;
     transition: 1s;
     transition-timing-function: ease;
+}
+
+
+
+.acordeon.open .fa-chevron-down {
+    transform: rotate(180deg);
+    transition: .25s;
+}
+
+.acordeon .fa-chevron-down {    
+    transition: .25s;
+}
+
+button.trigger .separador {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    ;
 }
